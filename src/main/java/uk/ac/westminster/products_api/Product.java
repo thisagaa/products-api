@@ -1,6 +1,6 @@
 package uk.ac.westminster.products_api;
 
-public class Product {
+public abstract class Product {
 
     private Long id;
     private String name;
@@ -39,4 +39,6 @@ public class Product {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public abstract String getSummary();
 }
